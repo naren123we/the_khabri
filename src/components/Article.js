@@ -11,7 +11,7 @@ const Article = ({source}) => {
       {source.urlToImage? <img src={source.urlToImage} className=" h-[245px] rounded-xl" alt='img'/>:
       <img src={news} className=" h-[280px] rounded-xl" alt='img'/>
     }
-       <p className='text-lg font font-semibold p-3'>{`${source.title.length<100?source.title:source.title.slice(0,97)+'....'}`}</p>
+       <p className='text-lg font font-semibold p-3'>{source.title}</p>
       </div>
       
   )
